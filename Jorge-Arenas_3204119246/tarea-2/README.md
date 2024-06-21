@@ -31,4 +31,5 @@ En javascript existen varios tipos de bucles, cada uno está indicado para un ti
 **FOR**
 **WHILE**
 **DO WHILE**
+
 Como hemos señalado ya, las estructuras de control son muy importantes en Javascript y en cualquier lenguaje de programación. Es por ello que en los siguientes capítulos veremos cada una de estas estructuras detenidamente, describiendo su uso y ofreciendo algunos ejemplos. Comenzaremos con la estructura de control if.
