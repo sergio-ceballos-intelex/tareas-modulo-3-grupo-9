@@ -1,1 +1,1 @@
-Investigación bla bla bla
+Investigación bien hecha
