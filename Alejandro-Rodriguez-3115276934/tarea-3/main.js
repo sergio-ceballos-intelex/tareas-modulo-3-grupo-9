@@ -4,8 +4,9 @@ for(let i=1; i <= 50; i++){
 }
 console.log(conteo) */
 
-let conteo= [];
+ let conteo= [];
 for(let i=1; i <= 200; i++){
-    conteo.push(i)
-}
+    if(i.toString().startsWith(`2`)){
+        conteo.push(i)
+}}
 console.log(conteo)
