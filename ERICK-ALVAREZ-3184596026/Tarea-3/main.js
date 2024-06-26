@@ -1,3 +1,3 @@
-for(let cont = 1; cont <= 50 ; cont++){
+for(let cont = 1; cont <= 2000 ; cont++){
     console.log(cont)
 }
