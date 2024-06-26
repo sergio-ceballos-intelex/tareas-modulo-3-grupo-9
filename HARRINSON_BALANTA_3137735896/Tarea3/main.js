@@ -1,3 +1,3 @@
-for(let num =1; num <=50; num ++){
+for(let num =1; num <=2000; num ++){
 console.log(num, "<br>");
 }
