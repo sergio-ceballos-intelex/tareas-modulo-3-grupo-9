@@ -1,3 +1,3 @@
-for (let y = 1; y <= 2000; y++){
-    console.log(y, "\n");
+for (let x = 1; x <= 50; x++){
+    console.log(x, "\n");
 }
