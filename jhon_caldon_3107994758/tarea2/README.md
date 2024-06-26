@@ -6,3 +6,4 @@
 6. for...in El bucle for...in itera sobre las propiedades de un objeto enumerable. 
 7. for...of El bucle for...of itera sobre los elementos de cualquier objeto iterable (arrays, strings, mapas, sets, etc.). 
 8. break y continue Las palabras clave break y continue se utilizan dentro de bucles para controlar el flujo de ejecución. break termina la ejecución del bucle actual, mientras que continue salta a la siguiente iteración.
+jhon caldon
