@@ -19,4 +19,3 @@ Ciclo:
 for: repite una serie de sentencias con limite conocido.
 while: repite una serie de sentencias con un límite desconocido.
 do-while: ejecuta una primera sentencia y después repite una serie de sentencias con un límite desconocido.
-git
