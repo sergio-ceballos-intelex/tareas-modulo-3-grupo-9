@@ -12,4 +12,6 @@ for(let cont = 1; cont <= number ; cont++){
         console.log(numstring)
     } 
 }
+
+//linea de prueba
     
