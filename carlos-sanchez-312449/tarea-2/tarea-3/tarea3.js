@@ -1,3 +1,3 @@
-for (let conteo = 1; conteo <= 50 ; conteo ++){
+for (let conteo = 1; conteo <= 2000 ; conteo ++){
     console.log(conteo);
 }
