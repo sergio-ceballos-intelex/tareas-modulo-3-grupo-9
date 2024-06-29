@@ -35,13 +35,14 @@ body {
     margin-bottom: 1rem;
     font-family: monospace;
     font-weight: 600;
+    overflow-x: auto;
 }
 
 .btn {
     background-color: #1F2937;
     color: white;
-    font-size: 20px;
-    border: 0;
+    font-size: 22px;
+    border: solid 1px #111827;
     border-radius: .5rem;
     padding: 1.5rem .5rem;
     display: flex;
