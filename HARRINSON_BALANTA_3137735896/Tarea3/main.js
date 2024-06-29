@@ -1,6 +1,6 @@
 
-for (let num = 2; num <= 2000; num++){
-    let ope = num.toString();
+for (let nume = 2; nume <= 2000; nume++){
+    let ope = nume.toString();
     if (ope.startsWith('2')){
         console.log(ope)
     };
