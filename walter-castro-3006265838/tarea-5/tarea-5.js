@@ -34,18 +34,21 @@
 let nombreEstudiante = prompt("Registra nombre del estudiante");
 let edad = Number(prompt("Digita tu edad"));
 let cantidadMateriaAprobadas;
-
 if (edad > 18) {
   let promedio = Number(prompt("Registra el promedio de tus calificaciones"));
   if (promedio >= 6) {
-    let esRegular = Number(prompt("Estudiante regular? 1: Si, 2: No "));
-    cantidadMateriaAprobadas = Number(
-      prompt("Registra la cantidad de materias aprobadas")
-    );
-    if (esRegular === 1) {
-      let becado = Number(prompt("Estudiante becado? 1: Si, 2: No "));
+    let respuesta = prompt("Estudiante regular? 1: Si, 2: No ");
+   
+    let esRegular = respuesta === "1";
+    console.log(esRegular);
 
-      if (becado === 1) {
+    cantidadMateriaAprobadas = Number(
+      prompt("Registra la cantidad de materias aprobadas"));
+    if (esRegular) {
+      let rtabecado = prompt("Estudiante becado? 1: Si, 2: No ");
+      let becado = rtabecado === "1";
+      
+      if (becado) {
         console.log("Cumple con todos los requisitos");
       } else {
         console.log("Puedes solicitar el derecho a una beca");
