@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Registro de Estudiantes</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <form action="" id="formVerify">
+        <div class="title">
+            <h1>Registro de Estudiantes</h1>
+        </div>
+        <div class="content">
+            <label for="name">Ingresa tu nombre</label>
+            <input type="text" id="name" required>
+
+            <label for="edad">Ingresa tu edad</label>
+            <input type="number" id="edad" min="14" max="70" required>
+
+            <label for="prom">Promedio (0 a 10)</label>
+            <input type="number" id="prom" step="0.1" min="0" max="10" required>
+
+            <label for="materiasAprob">Cantidad de materias que aprobo</label>
+            <input type="number" id="materiasAprob" min="0" max="50" required>
+
+            <label for="esRegular">¿Eres estudiante regular?</label>
+            <input type="checkbox" id="esRegular">
+
+            <label for="esBecado">¿Eres estudiante becado?</label>
+            <input type="checkbox" id="esBecado">
+            
+            <button type="submit">Verificar</button>
+        </div>
+    </form>
+    <script src="./main.js"></script>
+</body>
+</html>
