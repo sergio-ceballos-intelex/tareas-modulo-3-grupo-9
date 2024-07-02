@@ -1,0 +1,1 @@
+![Tux, the Linux mascot](../img/tarea-3.JPG)
