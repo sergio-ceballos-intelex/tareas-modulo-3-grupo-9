@@ -46,3 +46,14 @@ for (let i = 0; i < estudiantes.length; i++) {
     element.edad = element.edad + 1
     console.log(element)
 }
+
+// 4. concatenar frutas2 al final de frutas1.
+mensaje(4);
+let frutas1 = ["Manzana", "Plátano", "Naranja"];
+let frutas2 = ["Fresa", "Uva", "Piña"];
+for (let i = 0; i < frutas2.length; i++) {
+    const element = frutas2[i];
+    frutas1.push(element)
+}
+
+console.log(frutas1)
