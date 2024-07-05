@@ -75,3 +75,10 @@ frutas20.forEach(fruta => {
     newFrutas.push(fruta)
  });
 console.log(newFrutas)
+
+//* Tambien se habia podido hacer asi, ahorrando codigo:
+frutas20.forEach(fruta=> {
+    frutas10.push(fruta)
+});
+console.log(frutas10)
+
