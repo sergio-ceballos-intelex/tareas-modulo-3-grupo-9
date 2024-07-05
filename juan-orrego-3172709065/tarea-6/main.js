@@ -31,3 +31,18 @@ for (let i = 0; i < productos.length; i++) {
 }
 
 console.log(`${nombreProM}, es el producto con el precio más bajo, tiene un precio de: ${precioM}`);
+
+// 3. incrementa la edad de cada estudiante en 1 año.
+mensaje(3);
+
+let estudiantes = [
+    { nombre: "Juan", edad: 20 },
+    { nombre: "María", edad: 22 },
+    { nombre: "Pedro", edad: 19 },
+];
+
+for (let i = 0; i < estudiantes.length; i++) {
+    const element = estudiantes[i];
+    element.edad = element.edad + 1
+    console.log(element)
+}
