@@ -46,3 +46,21 @@ console.log("Nombre del segundo estudiante:", estudiantes[1].nombre);
 
 estudiantes[0].edad = 25;
 console.log("Información completa del primer estudiante después de la actualización:", estudiantes[0]);
+
+mensaje(3);
+
+/* 3. Calcula la suma de las edades de todos los estudiantes en el array (puedes utilizar un map o foreach).
+Calcula el promedio de edad de los estudiantes.
+Imprime en la consola tanto la suma como el promedio de edad de los estudiantes. */ 
+
+let edadTotal = 0;
+
+estudiantes.forEach(est => {
+    est = est.edad;
+    edadTotal += est;
+    return edadTotal;
+});
+const promEdad = edadTotal / estudiantes.length;
+
+console.log(`La suma de edades de todos los estudiantes: (edad del primer estudiante actualizada): ${edadTotal}`);
+console.log(`Promedio de edad: ${promEdad}`);
