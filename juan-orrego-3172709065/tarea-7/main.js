@@ -1,7 +1,12 @@
 /* 1. genera un nuevo array que contenga los productos en stock (todos los productos cuyo stock es mayor a cero).
 genera un nuevo array con solo los nombres de los productos, ejemplo ["Camiseta", "Pantalón", "Zapatos", "Bufanda" ]
 (Opcional) Escribe un programa que calcule el precio total de los productos disponibles, para ello debes recorrer todos los productos y obtener la suma de el precio de todos ellos */
-const mensaje = (num) => console.log(`---PUNTO ${num}---`);
+function mensaje (num) {
+    console.log("");
+    console.log(`---PUNTO ${num}---`);
+    console.log("");
+};
+
 mensaje(1);
 
 const productos = [
@@ -64,3 +69,83 @@ const promEdad = edadTotal / estudiantes.length;
 
 console.log(`La suma de edades de todos los estudiantes: (edad del primer estudiante actualizada): ${edadTotal}`);
 console.log(`Promedio de edad: ${promEdad}`);
+
+mensaje(4);
+
+/* 4. Utiliza filter para encontrar al estudiante con el promedio más alto en el array. 
+Imprime en la consola el nombre y la edad del estudiante con el promedio más alto.
+Filtra los estudiantes mayores de 20 años en un nuevo array llamado estudiantesMayores.
+Imprime en la consola la información completa de los estudiantes mayores de 20 años. */ 
+
+const newStudents = [
+    {
+      nombre: "Ana",
+      edad: 20,
+      promedio: 85,
+      genero: "Femenino",
+      carrera: "Ingeniería Civil",
+      ciudad: "Bogotá",
+    },
+    {
+      nombre: "Juan",
+      edad: 22,
+      promedio: 78,
+      genero: "Masculino",
+      carrera: "Medicina",
+      ciudad: "Medellín",
+    },
+    {
+      nombre: "María",
+      edad: 21,
+      promedio: 90,
+      genero: "Femenino",
+      carrera: "Administración de Empresas",
+      ciudad: "Cali",
+    },
+    {
+      nombre: "Pedro",
+      edad: 23,
+      promedio: 82,
+      genero: "Masculino",
+      carrera: "Derecho",
+      ciudad: "Barranquilla",
+    },
+    {
+      nombre: "Laura",
+      edad: 24,
+      promedio: 88,
+      genero: "Femenino",
+      carrera: "Arquitectura",
+      ciudad: "Cartagena",
+    },
+    {
+      nombre: "Carlos",
+      edad: 20,
+      promedio: 75,
+      genero: "Masculino",
+      carrera: "Ingeniería de Sistemas",
+      ciudad: "Santa Marta",
+    },
+    {
+      nombre: "Sofía",
+      edad: 22,
+      promedio: 95,
+      genero: "Femenino",
+      carrera: "Psicología",
+      ciudad: "Pereira",
+    },
+  ];
+
+let estPromMayor = newStudents[0].promedio;
+let estNamePromMayor = newStudents[0].nombre;
+let estudiantesMayores = newStudents.filter((est) => est.edad > 20);
+
+const promMayor = newStudents.filter((est) => {
+    if(est.promedio > estPromMayor) {
+        estPromMayor = est.promedio;
+        estNamePromMayor = est.nombre;
+    }
+});
+
+console.log("Estudiantes con edad mayor a 20: ", estudiantesMayores);
+console.log(`\nEstudiante con mayor promedio: ${estNamePromMayor}, promedio de: ${estPromMayor}.`);
