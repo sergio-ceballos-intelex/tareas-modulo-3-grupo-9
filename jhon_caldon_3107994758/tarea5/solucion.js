@@ -1,25 +1,36 @@
-// calculadora
-const numero1=Number(prompt("Digita el primer numero"));
-const numero2=Number(prompt("Digita el segundo numero"));
-const operacion=prompt("Digita la  operacion que quieres hacer");
-
-if(operacion==="suma"||operacion==="+")
+// Registro de un estudiante 
+const name=prompt("Digita tu nombre ");
+const edad=Number(prompt("Digita tu edad"));
+const notas=Number(prompt("Digita el promedio de tus notas entre 0 a 10"));
+const regular = confirm("¿Eres un estudiante regular?");
+const materias= Number(prompt("Digita las materias aprobadas"))
+const beca= confirm("¿Eres becado?")
+  document.write(
+    "Nombre del estudiante:"+ name+ "<br>"+
+    "Edad:"+ edad+"<br>"+
+    "Promedio de Notas: " + notas+"<br>"+
+    "Estudiante Regular: " +( regular? "si":"no")+"<br>"+
+    "Materias Aprobadas:"+ materias+ "<br>"+
+    "Es becado: "+ (beca? "si":"no")+"<br>"
+  )
+if (edad < 18)
     {
-        document.write("La suma de tus numeros es: ", numero1 + numero2);
+        document.write("Eres menor de edad no podemos registrar");
     }
-    else if (operacion==="resta"||operacion==="-")
+    else if (notas<= 5)
         {
-            document.write("La resta de tus numeros es: ", numero1 - numero2);
+            document.write("No cumples con el promedio minimo de notas requerido");
         }
-    else if (operacion==="divicion"||operacion==="/")
+    else if (regular == false)
         {
-            if (numero2 === 0){
-                document.write("ERROR: la divicion por 0")}
-            if (numero2 != 0)
-            document.write("La divicion de tus numeros es: ", numero1 / numero2);
+            document.write("Debes primero registrarte como regular");
         
         }
-    else if (operacion==="multiplicacion"||operacion==="*")
+    else if (beca===false)
         {
-            document.write("La multiplicacion de tus numeros es: ", numero1 * numero2);
+            document.write("Puedes solicitar una beca ya que cumples con los requisitos");
         }
+    else if (notas>=6 && regular && beca){
+            document.write("Felicidades cumples con todos los requisitos felicidades")
+        }
+   
