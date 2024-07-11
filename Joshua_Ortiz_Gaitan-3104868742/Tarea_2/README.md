@@ -109,5 +109,4 @@ function nombreFuncion() {
     return valor;
 }
 
-Estas estructuras son vitales para jugar y modificar la logica del programa 
 
