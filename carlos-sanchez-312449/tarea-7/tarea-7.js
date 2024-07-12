@@ -140,6 +140,7 @@ const Mayores = estudiantes.filter(estudiante => estudiante.edad > 20);
 
 console.log("\nMayores de 20 años:");
 console.log(Mayores);
+//..
 
 
 
