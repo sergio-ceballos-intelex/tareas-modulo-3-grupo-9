@@ -1,0 +1,4 @@
+//Hacer un programa que simule una peticion a un servidor, con delay de 2000 ms, donde se obtenga una informacion de selecciones de la Copa América. Si el usuario general de la aplicación esta logueado (isLogged) la promesa se resuelve con las selecciones (selecciones), si no, se rechaza con un mensaje diciendo "No estas logueado dentro de la app". Dentro de cada selección hay una propiedad código de país (code) que servirá para obtener la informacion de los jugadores de esa selección, simulando otra peticion tambien con delay de 5000 ms que se resolvera con todos los jugadores dentro de la lista jugadores.
+
+//Notas: Usar Promise.all para la segunda peticion fake, es decir la que obtiene los jugadores, una vez se resuelva la primera (dentro del then).
+//La promesa de obtener jugadores debe recibir como parametro un código de país.
